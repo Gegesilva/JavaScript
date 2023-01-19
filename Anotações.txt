@@ -1,0 +1,15 @@
+Mudar textos em sites:
+document.querySelector('nome do texto em f12').innerText = 'Novo Texto'
+
+window.alert('Minha Primeira mensagem');
+
+no nodeJS typeof me diz qual o tipo da var
+
+n1.tolocaleString('pt-BR',{style: 'currency', currency 'BRL'})
+(coloca moeda local no caso real 'BRL')
+
+variavel.toFixed(2)
+(Formatação de String)
+
+.replace('.',',')
+(troca um caracter por outro)
