@@ -37,9 +37,8 @@
 
 
 
-    </script>
-    <script>
-        for(let i = 0; i < alunos.length; i++){
+   
+         for(let i = 0; i < alunos.length; i++){
             if(alunos[i].nota > 7){
                 document.write(alunos[i].nome, " passou de ano! \n")
             }
@@ -50,6 +49,15 @@
                 window.alert(alunos[i].nome, "PAU!")
             }
             i++
+        } 
+
+        window.alert("---------------");
+        window.alert("FOR OF");
+
+        for(let aluno of alunos) {
+            if(alunos.nota > 7){
+                document.write(alunos.nome, 'Passou');
+            }
         }
 
     </script>

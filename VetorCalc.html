@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex Vetor</title>
+</head>
+<body>
+    <script>
+        function Calcula_vetor(vetor, numero){
+            for(let i = 0; i < vetor.length; i++){
+                if(vetor[i] > 5){
+                    vetor[i] =  vetor[i] * numero;
+                }
+            }
+            return vetor;
+        }
+
+        window.alert(Calcula_vetor([1,3,5,8,9], 2));
+
+        let resultado = [];
+        function Calcula_vetor2(vetor,numero){
+            for(let item of vetor){
+                if(item > 5){
+                    resultado[resultado.length] = item * numero;
+                }else{
+                    resultado[resultado.length] = item;
+                }
+            }
+            return resultado;
+        }
+
+        window.alert(Calcula_vetor2([3,5,7,9,3],2));
+    </script>
+</body>
+</html>
